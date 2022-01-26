@@ -4,7 +4,7 @@ services:
   nginx:
     build:
       context: .
-      dockerfile: ./docker/nginx/nginx.dockerfile
+      dockerfile: ./docker/nginx/Dockerfile
     ports:
       - 80:80
     volumes:
@@ -26,6 +26,6 @@ services:
   php:
     build:
       context: .
-      dockerfile: ./docker/php/php.dockerfile
+      dockerfile: ./docker/php/Dockerfile
     volumes:
       - ./src:/var/www/html
